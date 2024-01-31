@@ -1,0 +1,50 @@
+<div style="width: 500px; margin: auto;">
+    <div class="edit-form">
+      <div class="mb-3" style="display: flex; justify-content: center;">
+        <h2 class="card-title" style="font-weight: bold;">Signup<span class="text-muted fw-normal ms-2"></span></h2>
+      </div>
+      <form>
+        <label style="font-weight: bold;">Username</label>
+        <div class="form-group">            
+            <input 
+              type="text" 
+              class="form-control" 
+              id="nome" 
+              [(ngModel)]="utente.username"
+              name="nome"
+              style="margin-top: 5px; margin-bottom: 5px;"
+            />
+        </div>
+
+        <label style="font-weight: bold;">Email</label>
+        <div class="form-group">            
+            <input 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              [(ngModel)]="utente.email"
+              name="email"
+              style="margin-top: 5px; margin-bottom: 5px;"
+            />
+        </div>
+
+        <label style="font-weight: bold;">Password</label>
+        <div class="form-group">
+            <input 
+              type="password" 
+              class="form-control" 
+              id="cognome" 
+              [(ngModel)]="utente.password" 
+              name="cognome"
+              style="margin-top: 5px; margin-bottom: 5px;"
+            />
+        </div>
+      </form>
+      <br>
+      <div style="display: flex; justify-content: center;">
+        <button (click)="onSubmit()" class="btn btn-primary" style="margin-right: 5px;">Signup</button>
+        <button (click)="goBack()" class="btn btn-primary">Indietro</button>
+      </div>
+      <p></p>
+    </div>
+  </div>

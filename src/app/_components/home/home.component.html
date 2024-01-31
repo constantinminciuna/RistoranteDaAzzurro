@@ -1,0 +1,8 @@
+<div class="mb-3" style="display: flex; justify-content: center;">
+    <div *ngIf="!isAuthenticated">
+        <h1 class="card-title" style="font-weight: bold;">Eseguire il login<span class="text-muted fw-normal ms-2"></span></h1>
+    </div>
+    <div *ngIf="isAuthenticated">
+        <h1 class="card-title" style="font-weight: bold;">Benvenuto<span class="text-muted fw-normal ms-2"></span></h1>
+    </div>
+</div>
